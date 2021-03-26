@@ -1,0 +1,140 @@
+body {
+  background-image: url("../assets/AdobeStock_88586570.jpeg");
+  background-size:cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.card-columns {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.logo {
+  background-image: url("../assets/image.png");
+  position: fixed;
+  top: 0px;
+}
+.animation {
+  margin-top: 5%;
+  display: inline-block;
+  margin-bottom: 5%;
+  max-height: 15%!important;
+}
+
+.infoBanner {
+  margin-top: 15% !important;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+
+.one,
+.two,
+.three {
+  display: block;
+  float: right;
+}
+
+.one {
+  background: url("../assets/spinner1.svg");
+  width: 80px;
+  height: 80px;
+  background-size: 100% 100%;
+  margin-top: -10px;
+  margin-right: 8px;
+}
+
+.two {
+  background: url('../assets/spinner2.svg');
+  width:100px;
+  height:100px;
+  background-size:100% 100%;
+}
+
+.three {
+  background: url("../assets/spinner1.svg");
+  width: 80px;
+  height: 80px;
+  background-size: 100% 100%;
+  margin-top: -30px;
+  margin-left: -10px;
+}
+
+@keyframes spin-one {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
+  }
+}
+
+.spin-one {
+  -webkit-animation: spin-one 1.5s infinite linear;
+  animation: spin-one 3s infinite linear;
+}
+
+@keyframes spin-two {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.spin-two {
+  -webkit-animation: spin-two 2s infinite linear;
+  animation: spin-two 3s infinite linear;
+}
+
+.service-offerings {
+  margin-top: 50px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 250px;
+}
+.placeholder {
+  height: 650px;
+}
+.service-offerings i.fa {
+  font-size: 55px;
+  transition: all 0.5s ease-in-out;
+}
+li {
+  list-style: none;
+  font-size: 18px;
+}
+.service-details {
+  padding: 10px 0;
+  border-radius: 3px;
+}
+.services-list {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.service-category {
+  margin-bottom: 100px;
+  transition: all 0.5s ease-in-out;
+}
+.service-category:hover .services-list {
+  height: 280px;
+  margin-bottom: 0;
+}
+.service-category:hover i.fa {
+  font-size: 80px;
+}
+.service-details {
+  background-color: rgba(0,0,14,0.56);
+  padding: 80px;
+  text-align: center;
+}
+
